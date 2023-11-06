@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+}
+
+.RaniLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 18px;
+    margin-left: 27px;
+}
+
+.RanilogoUtama {
+    width: 96;
+    height: 96;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.RaniTeks {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    margin-left: 20px;
+}
+
+.RaniTitle {
+    /* background-color: red; */
+    padding-top: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.Ranititiktiga {
+    padding-top: 15px;
+}
+
+.RaniKotak{
+    margin-top: 30px;
+    padding: 25px 25px;
+    background-color: rgba(34, 34, 34, 1);
+    color: white;
+    text-align: center;
+    border-radius: 14px;
+    display: flex;
+    justify-content:space-between;
+    margin-left: 320px;
+    margin-right: 320px;
+}
+
+.RaniKotak:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.RanilogoLink img {
+    margin-left: 710px;
+    margin-right: 320px;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 46px;
+    object-fit: contain;
+}
+
+
