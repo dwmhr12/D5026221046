@@ -20,4 +20,8 @@ class DosenController extends Controller
         $umur = 19;
         return view('blog', ['nama' => $nama,'alamat' => $alamat, 'umur' => $umur]);
     }
+
+    public function showNama($nama){
+        return "Anda Telah mengisikan : ". $nama; // $nama itu sama dengan {nama} di web.php
+    }
 }

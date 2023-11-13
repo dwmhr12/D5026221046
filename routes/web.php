@@ -93,6 +93,15 @@ Route::get('/rapep', function () {
     return view('latihanr');
 });
 
+// Route::get('dosen', 'DosenController@index');
+
+
+// Route::get('pegawai', 'PegawaiController@index');
+
+// Route::get('Rani', 'RaniController@index');
+
 Route::get('perkalian', 'App\Http\Controllers\DosenController@index');
-Route::get('show', 'App\Http\Controllers\DosenController@showblog');
+Route::get('showBlog', 'App\Http\Controllers\DosenController@showblog');
+
+Route::get('/pegawai/{nama}', 'App\Http\Controllers\DosenController@showNama');
 
