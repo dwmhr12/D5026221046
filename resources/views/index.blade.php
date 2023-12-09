@@ -5,7 +5,7 @@
 <h2>www.malasngoding.com</h2>
 <h3>Data Pegawai</h3>
 
-<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>	
+<a href="/pegawai/tambah" class="btn btn-primary"> + Tambah Pegawai Baru</a>	
 	<br/>
 	<br/>
 	@endsection
@@ -27,7 +27,17 @@
 		<tr>
 			<td>{{ $p->pegawai_nama }}</td>
 			<td>{{ $p->pegawai_jabatan }}</td>
-			<td>{{ $p->pegawai_umur }}</td>
+			<td style="background-color: 
+            @if($p->pegawai_umur <= 20)
+                green; color: white
+            @elseif($p->pegawai_umur >= 21 && $p->pegawai_umur <= 30)
+                yellow; color: red
+            @else
+                blue; color: white
+            @endif
+            ">
+            {{ $p->pegawai_umur }}
+        </td>
 			<td>{{ $p->pegawai_alamat }}</td>
 			<td>
 				<a href="/pegawai/view/{{ $p->pegawai_id }}" class= "btn btn-success">View</a>

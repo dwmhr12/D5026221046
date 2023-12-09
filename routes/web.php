@@ -86,7 +86,7 @@ Route::get('/latihan', function () {
 });
 
 Route::get('/index', function () {
-    return view('index');
+    return view('indexUTS');
 });
 
 Route::get('/rapep', function () {
@@ -121,9 +121,23 @@ Route::post('/pegawai/store','App\Http\Controllers\PegawaiController@store');
 Route::get('/pegawai/edit/{id}','App\Http\Controllers\PegawaiController@edit');
 Route::post('/pegawai/update','App\Http\Controllers\PegawaiController@update');
 Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus');
+
 Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 
 
 	
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
+
+
+
+// Tugas Pra EAS
+Route::get('/masker','App\Http\Controllers\MaskerController@indexPraEAS');
+Route::get('/masker/tambahMasker','App\Http\Controllers\MaskerController@tambahPraEAS');
+Route::post('/masker/store','App\Http\Controllers\MaskerController@storePraEAS');
+Route::get('/masker/editMasker/{id}','App\Http\Controllers\MaskerController@editPraEAS');
+Route::post('/masker/updateMasker','App\Http\Controllers\MaskerController@updatePraEAS');
+Route::get('/masker/hapusMasker/{id}','App\Http\Controllers\MaskerController@hapusPraEAS');
+Route::get('/masker/viewMasker/{id}','App\Http\Controllers\MaskerController@viewPraEAS');
+Route::get('/masker/cariMasker','App\Http\Controllers\MaskerController@cariPraEAS');
+
 

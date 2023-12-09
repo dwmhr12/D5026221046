@@ -18,17 +18,17 @@
     
 <div class="container"> 
     <header>
-		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		{{-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 			<!-- Brand -->
 			<a class="navbar-brand" href="#">5026221046 - Dewi Maharani</a>
 		  
 			<!-- Links -->
 			<ul class="navbar-nav">
 			  <li class="nav-item">
-				<a class="nav-link" href="#">Link 1</a>
+				<a class="nav-link" href="#">Hai</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="#">Link 2</a>
+				<a class="nav-link" href="#">Hallo</a>
 			  </li>
 		  
 			  <!-- Dropdown -->
@@ -43,7 +43,42 @@
 				</div>
 			  </li>
 			</ul>
-		  </nav>
+		  </nav> --}}
+		  <nav class="navbar navbar-expand-lg pt-4">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" style="margin-right:50px;" href="#">5026221046 - Dewi Maharani</a>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		
+						<li class="nav-item" style="margin-right: 50px;"> <!-- Tambahkan margin-right di sini -->
+							<a class="nav-link" href="/masker">EAS</a>
+						</li>
+		
+						<li class="nav-item" style="margin-right: 50px;"> <!-- Tambahkan margin-right di sini -->
+							<a class="nav-link active" aria-current="page" href="/index">UTS</a>
+						</li>
+		
+						<li class="nav-item" style="margin-right: 50px;"> <!-- Tambahkan margin-right di sini -->
+							<a class="nav-link" href="/pegawai">Pegawai</a>
+						</li>
+		
+						<li class="nav-item" style="margin-right: 70px;"> <!-- Tambahkan margin-right di sini -->
+							<a class="nav-link" href="/masker">Masker</a>
+						</li>
+		
+					</ul>
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+		
+				</div>
+			</div>
+		</nav>
+		
 	</header>
 	<hr/>
 	<br/>
@@ -61,11 +96,9 @@
 	<br/>
 	<hr/>
 	<footer>
-		<p>&copy; <a href="https://www.malasngoding.com">www.malasngoding.com</a>. 2018 - 2019</p>
+		<p>&copy; <a href="https://www.malasngoding.com">Dewi Maharani</a>. PWEB D</p>
 	</footer>
 </div>
-    
-
 
 </body>
 </html>

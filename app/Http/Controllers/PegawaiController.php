@@ -18,6 +18,7 @@ class PegawaiController extends Controller
     	return view('index',['pegawai' => $pegawai]);
  
     }
+	
     public function tambah()
 {
  
