@@ -10,16 +10,29 @@
     <br/>
     @endsection
     @section('konten')
+
+    @if(session('error'))
+    <div class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+@endif
+
+@if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
         
 </form>
 </form>
 <table class="table table-striped table-hover">
-    <tr>
+    <tr >
         <th>Kode Pegawai</th>
         <th>Nama Lengkap</th>
         <th>Divisi</th>
         <th>Departemen</th>
         <th>Opsi</th>
+
     </tr>
     @foreach($karyawan as $p)
     <tr>

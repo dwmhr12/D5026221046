@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Validation\Rule;
 
 class EasController extends Controller
 {
@@ -22,36 +21,25 @@ class EasController extends Controller
         return view('tambahKaryawan');
     }
 
-    public function store(Request $request)
+
+
+
+    public function storeKaryawan(Request $request)
     {
-        //Pesan Validasi
-    $messages = [
-        'kodepegawai.unique' => ']Kode karyawan sudah tersedia.',
-    ];
+        $existKaryawan = DB::table('karyawan')
+        ->where('kodepegawai', $request->kodepegawai)
+        ->first();
 
-    // Validasi input
-    $request->validate([
-        'kodepegawai' => [
-            'required',
-            'max:5',
-            Rule::unique('karyawan', 'kodepegawai'),
-        ],
-        'namalengkap' => 'required|max:50',
-        'divisi' => 'required|max:20',
-        'departemen' => 'required|max:20',
-    ], $messages);
-
-    DB::table('karyawan')->insert([
-        'kodepegawai' => $request->kodepegawai,
-        'namalengkap' => $request->namalengkap,
-        'divisi' => $request->divisi,
-        'departemen' => $request->departemen
-    ]);
-
-    //alert berhasil
-    return redirect('/karyawan')->with('success', 'Data karyawan berhasil ditambahkan.');
+    if ($existKaryawan) {
+        return redirect('/karyawan')->with('Maaf', 'Kode Pegawai sudah ada!');
     }
-
-
+	DB::table('karyawan')->insert([
+		'kodepegawai' => $request->kodepegawai,
+		'namalengkap' => $request->namalengkap,
+		'divisi' => $request->divisi,
+        'departemen' => $request->departemen
+	]);
+	return redirect('/karyawan');
+    }
 
 }

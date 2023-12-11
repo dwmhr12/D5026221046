@@ -6,11 +6,23 @@
     <br>
     <br>
 
+    @if(session('error'))
+        <div class="alert alert-danger">
+            {{ session('error') }}
+        </div>
+    @endif
+
+    @if(session('success'))
+        <div class="alert alert-primary">
+            {{ session('success') }}
+        </div>
+    @endif
+
 <form action="/karyawan/storeKaryawan" method="post">
     {{csrf_field()}}
     <div class = "form-group row">
         <label for = "ID" class = "col-sm-2 control-label">Kode Pegawai</label>
-        <div class = "col-sm-8">
+        <div class = "col-sm-8" {{ $errors->get('kodepegawai') ? 'has-error' : '' }}>
             <input name="kodepegawai" type="text"
             class = "form-control" id="kodepegawai"
             placeholder="Masukkan Kode Pegawai" maxlength="5">
