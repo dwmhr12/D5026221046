@@ -6,7 +6,7 @@
     <br>
     <br>
 
-<form action="/masker/store" method="post">
+<form action="/masker/storeMasker" method="post">
     {{csrf_field()}}
     <div class = "form-group row">
         <label for = "masker_merkmasker" class = "col-sm-2 control-label">Merk Masker</label>

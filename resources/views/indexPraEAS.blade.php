@@ -1,11 +1,11 @@
 @extends('master2')
-@section('title','Database Pegawai')
+@section('title','Database Masker')
 
 @section('judul_halaman')
 <h2>Data Masker</h2>
 <h3> Surabaya</h3>
 
-<a href="/masker/tambahMasker" class="btn btn-primary"> + Tambah Stok Masker</a>
+<a href="/masker/tambahMasker" class="btn btn-dark"> + Tambah Stok Masker</a>
     <br/>
     <br/>
     @endsection
@@ -15,7 +15,7 @@
          <input class="form-control" type="text" name="cari"
         placeholder="Cari Masker Berdasarkan Merk" value="{{ old 
         ('cari') }}">
-        <input type="submit" value="CARI" class="btn btn-primary">
+        <input type="submit" value="CARI" class="btn btn-info">
         
 </form>
 <table class="table table-striped table-hover">

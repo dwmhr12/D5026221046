@@ -133,11 +133,25 @@ Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 // Tugas Pra EAS
 Route::get('/masker','App\Http\Controllers\MaskerController@indexPraEAS');
 Route::get('/masker/tambahMasker','App\Http\Controllers\MaskerController@tambahPraEAS');
-Route::post('/masker/store','App\Http\Controllers\MaskerController@storePraEAS');
+Route::post('/masker/storeMasker','App\Http\Controllers\MaskerController@storePraEAS');
 Route::get('/masker/editMasker/{id}','App\Http\Controllers\MaskerController@editPraEAS');
 Route::post('/masker/updateMasker','App\Http\Controllers\MaskerController@updatePraEAS');
 Route::get('/masker/hapusMasker/{id}','App\Http\Controllers\MaskerController@hapusPraEAS');
 Route::get('/masker/viewMasker/{id}','App\Http\Controllers\MaskerController@viewPraEAS');
 Route::get('/masker/cariMasker','App\Http\Controllers\MaskerController@cariPraEAS');
+
+
+//NilaiKuliah
+Route::get('/nilaikuliah','App\Http\Controllers\nilaiKuliahController@indexnilaikuliah2');
+Route::get('/nilaikuliah/tambahData','App\Http\Controllers\nilaiKuliahController@tambahData');
+Route::post('/nilaikuliah/storeData','App\Http\Controllers\nilaiKuliahController@storeData');
+
+
+//EAS
+Route::get('/karyawan','App\Http\Controllers\EASController@indexKaryawan');
+Route::get('/karyawan/hapusKaryawan/{id}','App\Http\Controllers\EASController@hapusKaryawan');
+Route::get('/karyawan/tambahKaryawan','App\Http\Controllers\EASController@tambahKaryawan');
+Route::post('/karyawan/storeKaryawan','App\Http\Controllers\EASController@storeKaryawan');
+
 
 

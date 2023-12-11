@@ -54,7 +54,7 @@
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 		
 						<li class="nav-item" style="margin-right: 50px;"> <!-- Tambahkan margin-right di sini -->
-							<a class="nav-link" href="/masker">EAS</a>
+							<a class="nav-link" href="/karyawan">Karyawan</a>
 						</li>
 		
 						<li class="nav-item" style="margin-right: 50px;"> <!-- Tambahkan margin-right di sini -->
@@ -65,15 +65,27 @@
 							<a class="nav-link" href="/pegawai">Pegawai</a>
 						</li>
 		
-						<li class="nav-item" style="margin-right: 70px;"> <!-- Tambahkan margin-right di sini -->
+						<li class="nav-item" style="margin-right: 50px;"> <!-- Tambahkan margin-right di sini -->
 							<a class="nav-link" href="/masker">Masker</a>
 						</li>
-		
+
+						<li class="nav-item" style="margin-right: 70px;"> <!-- Tambahkan margin-right di sini -->
+							<a class="nav-link" href="/nilaikuliah">Nilai Kuliah</a>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							  Database
+							</a>
+							<div class="dropdown-menu">
+							  <a class="dropdown-item" href="/pegawai">Pegawai</a>
+							  <a class="dropdown-item" href="/masker">Masker</a>
+							  <a class="dropdown-item" href="/nilaikuliah">Nilai Kuliah</a>
+							</div>
+						  </li>
+
 					</ul>
-					<form class="d-flex" role="search">
-						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-success" type="submit">Search</button>
-					</form>
+					
 		
 				</div>
 			</div>
@@ -95,9 +107,37 @@
 	<br/>
 	<br/>
 	<hr/>
-	<footer>
+	{{-- <footer>
 		<p>&copy; <a href="https://www.malasngoding.com">Dewi Maharani</a>. PWEB D</p>
-	</footer>
+	</footer> --}}
+
+	<section class="footer d-flex align-items-center py-lg-0 py-5 mx-3">
+		<div class="container">
+		  <div class="row d-flex justify-content-between">
+			<div class="col col-lg-5 col-12 mb-lg-0 mb-4">
+			  <h3 class="fw-bold">This is me Rani.</h3>
+			  <p class="mb-0">Thank you for visiting my web, nice to meet you and see you soon</p>
+			</div>
+			<div class="col col-lg-2 col-12 d-flex flex-column mb-lg-0 mb-4">
+			  <h5 class="fw-bold">Menu</h5>
+			  <a class="text-decoration-none mb-2" href="/karyawan">Karyawan</a>
+			  <a class="text-decoration-none mb-2" href="/index">UTS</a>
+			  <a class="text-decoration-none mb-2" href="/pegawai">Pegawai</a>
+			  <a class="text-decoration-none mb-2" href="/masker">Masker</a>
+			  <a class="text-decoration-none" href="/nilaikuliah">Nilai Kuliah</a>
+			</div>
+			<div class="col col-lg-2 col-12 d-flex flex-column">
+			  <h5 class="fw-bold">Follow Me</h5>
+			  <a class="text-decoration-none mb-2" href="https://www.instagram.com/dwmhr1.2_/"target="_blank">Instagram</a>
+			  <a class="text-decoration-none mb-2" href="https://www.linkedin.com/in/dewi-maharani-274366209/"target="_blank">LinkedIn</a>
+			  <a class="text-decoration-none" href="https://twitter.com/pinocio12_"target="_blank">Twitter</a>
+			</div>
+			<div class="col col-lg2 col-12 d-flex flex-column">
+			  <a class="fw-bold" href="https://www.instagram.com/dwmhr1.2_/"target="_blank">Contact Me.</a>
+			</div>
+		  </div>
+		</div>
+	  </section>
 </div>
 
 </body>
